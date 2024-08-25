@@ -69,7 +69,7 @@ public class ExpenseService {
 
 
         expenseRepository.save(expense);
-   //     emailService.sendAsyncEmails(expense);
+        emailService.sendAsyncEmails(expense);
         updateBalances(expense);
         return expense;
     }
